@@ -4,7 +4,7 @@ import pyodbc
 try:
     #Conexion BBDD
     db = pyodbc.connect(
-        'DRIVER={SQL Server};SERVER=AGREGARIP;DATABASE=FraudeControl;UID=sa;PWD=Pass.001')
+        'DRIVER={SQL Server};SERVER=NUMBERIP;DATABASE=Wallet;UID=sa;PWD=Pass.001')
 
     lista = []
     #Connector
@@ -38,7 +38,7 @@ try:
             send = "Alerta en Fraude"
             id = "@PruebasBotvlady"
 
-            token = "2016605395:AAGkZJl-EjUygap-Dc5QmfG9-clzejMymiM"
+            token = "TOKEN"
             url = "https://api.telegram.org/bot" + token + "/sendMessage"
             data = {
                 'chat_id': id,
