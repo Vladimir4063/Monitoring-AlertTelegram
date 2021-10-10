@@ -3,8 +3,9 @@ We create queries to SQL Server and if the records have exceeded the parameters,
 
 Creamos consultas a SQL Server y si los registros llevan superando los parametros, se crea una alerta atravez de telegram para atender el caso.
 
-#Create VM
+#Create VM (pueden indicar la version o no)
 -virtualenv -p python3 env
+-virtualenv env
 
 #Activate
 -env\Scripts>activate.bat
